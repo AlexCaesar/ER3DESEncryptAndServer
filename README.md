@@ -8,7 +8,7 @@ NSString encrypt/decrypt tools  and server(php) decrypt/encrypt.
  * ###use ER3DESEncrypt
 
 	
-		:::Objective-C
+```Objective-C
 		#import "ER3DESEncrypt.h"
 		...
 		NSString *orig = @"www.erblah.com", *encryptString, *decryptString, *key = @"I love you.";
@@ -30,18 +30,21 @@ NSString encrypt/decrypt tools  and server(php) decrypt/encrypt.
     	decryptString = [encryptCustomKey decryptString:encryptString];
     	NSLog(@"key:%@\n%@ --- %@ --- %@",encryptDefaultKey.encryptKey, 
     							orig, encryptString, decryptString);
+```
 
 
  * ###use Category(NSString+Encrypt3DESandBase64)
  
  
- 		:::Objective-C
+```Objective-C
 		#import "NSString+Encrypt3DESandBase64.h"
 		...
 		NSString *orig = @"www.erblah.com", *encryptString, *decryptString, *key = @"I love you.";
 		encryptString = [orig encryptStringWithKey:key];
     	decryptString = [encryptString decryptStringWithKey:key];
    		NSLog(@"key:%@\n%@ --- %@ --- %@", key, orig, encryptString, decryptString);
+   		
+```
    		
    		
    		
