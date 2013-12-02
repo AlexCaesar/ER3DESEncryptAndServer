@@ -18,7 +18,8 @@ NSString encrypt/decrypt tools  and server(php) decrypt/encrypt.
     	orig = @"www.erblah.com";
     	encryptString = [encryptDefaultKey encryptString:orig];
     	decryptString = [encryptDefaultKey decryptString:encryptString];
-    	NSLog(@"key:%@\n%@ --- %@ --- %@",encryptDefaultKey.encryptKey, orig, encryptString, decryptString);
+    	NSLog(@"key:%@\n%@ --- %@ --- %@",encryptDefaultKey.encryptKey, 
+    							orig, encryptString, decryptString);
     
     
     	//custom key
@@ -26,7 +27,8 @@ NSString encrypt/decrypt tools  and server(php) decrypt/encrypt.
     
     	encryptString = [encryptCustomKey encryptString:orig];
     	decryptString = [encryptCustomKey decryptString:encryptString];
-    	NSLog(@"key:%@\n%@ --- %@ --- %@",encryptDefaultKey.encryptKey, orig, encryptString, decryptString);
+    	NSLog(@"key:%@\n%@ --- %@ --- %@",encryptDefaultKey.encryptKey, 
+    							orig, encryptString, decryptString);
 
 
  * ###use Category(NSString+Encrypt3DESandBase64)
@@ -43,4 +45,4 @@ NSString encrypt/decrypt tools  and server(php) decrypt/encrypt.
    		
  * ###Server (php)
  
- 	^_^ , Plz open **Crypt3Des.php** file.
+ 	^_^ , Plz open **Crypt3Dephp** file.
