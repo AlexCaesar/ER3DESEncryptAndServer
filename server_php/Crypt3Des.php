@@ -1,7 +1,8 @@
 <?php
+
 class Crypt3Des {
 	public $key ;
-	function Crypt3Des($key){
+	function __construct($key){
 		$this->key = $key;
 	}
 
